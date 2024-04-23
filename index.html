@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNACKS TIME</title>
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Link To CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">Snacks Time</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><i class="fa-solid fa-cart-shopping" style="color: #f2f4f8;"></i></li>
+        </ul>
+    </header>
+    <!-- Home  Section-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Snacks Time</h1>
+            <h2>The tasty Snacks of <br> your choice</h2>
+            <a href="#menu" class="btn">View Menu</a>
+        </div>
+        <div class="home-img">
+            <img src="images/home-img1.jpg" alt="Home-img" width="250px" height="600px">
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about-img.jpeg" alt="about-img">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>We make good and <br> tasty Snacks</h2>
+            <p>Snacks come in a variety of forms including fresh ingredients and packaged and processed foods.A snack is a small portion of food generally eaten between meals.</p>
+            <a href="https://en.wikipedia.org/wiki/Snack" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>Menu</span>
+            <h2>Tasty Menus</h2>
+        </div>
+        <div class="menu-container">
+            <!-- Box 1 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/french fries.jpg" alt="French-fries">
+                </div>
+                <h2>French Freies</h2>
+                <span>$80.00</span>
+                <i class='bx bx-cart-alt' onclick="addToCart('French Fries', 80.00)"></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/samosa.jpeg" alt="Samosa">
+                </div>
+                <h2>Samosa</h2>
+                <span>$20.00</span>
+                <i class='bx bx-cart-alt' onclick="addToCart('Samosa', 20.00)"></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/Nuggets.jpeg" alt="Nuggets">
+                </div>
+                <h2>Veg Nuggets</h2>
+                <span>$70.00</span>
+                <i class='bx bx-cart-alt' onclick="addToCart('Veg Nuggets', 70.00)"></i>
+            </div>
+        </div>
+        <div class="menu-container">
+            <!-- Box 1 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/veg pizza.jpeg" alt="Veg-pizza">
+                </div>
+                <h2>Veg Pizza</h2>
+                <span>$150.00</span>
+                <i class='bx bx-cart-alt' onclick="addToCart('Veg Pizza', 150.00)"></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/chicken pizza.jpeg" alt="Chicken-pizza">
+                </div>
+                <h2>Chicken Pizza</h2>
+                <span>$250.00</span>
+                <i class='bx bx-cart-alt' onclick="addToCart('Chicken Pizza', 250.00)"></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/burger.jpg" alt="Burger">
+                </div>
+                <h2>Burger</h2>
+                <span>$180.00</span>
+                <i class='bx bx-cart-alt' onclick="addToCart('Burger', 180.00)"></i>
+            </div>
+        </div>
+        <div class="menu-container">
+            <!-- Box 1 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/milkshakes1.jpg" alt="Milkshakes">
+                </div>
+                <h2>Milkshakes</h2>
+                <span>$80.00</span>
+                <i class='bx bx-cart-alt' onclick="addToCart('Milkshakes', 80.00)"></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/brownie.jpg" alt="Brownie">
+                </div>
+                <h2>Brownie</h2>
+                <span>$60.00</span>
+                <i class='bx bx-cart-alt' onclick="addToCart('Brownie', 60.00)"></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/falooda2.jpg" alt="Falooda">
+                </div>
+                <h2>Falloda</h2>
+                <span>$130.00</span>
+                <i class='bx bx-cart-alt' onclick="addToCart('Falloda', 130.00)"></i>
+            </div>
+        </div>
+        <div class="yy">
+            <div class="cart">
+                      <h2>Shopping Cart</h2><br>
+                      <ul id="cart-items"></ul><br>
+                      <p id="total">Total: Rs 0.00</p><br>
+                      <button class="order-now" onclick="abc()">Checkout</button>
+                    </div>
+                  </div>
+    </section>
+
+    <!-- Service -->
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Service</span>
+            <h2>We provide best food services</h2>
+        </div>
+
+        <div class="servives-container">
+            <!-- Box 1 -->
+            <div class="s-box">
+                <img src="https://images.pexels.com/photos/280453/pexels-photo-280453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="">
+                <h3>You Order</h3>
+                <p>The great taste, I also appreciated the prompt delivery and excellent packaging, which ensured that the snacks arrived fresh and in perfect condition.</p>
+            </div>
+            <!-- Box 2 -->
+            <div class="s-box">
+                <img src="https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="">
+                <h3>Shipping</h3>
+                <p>I recently ordered snacks from "Snacks Time" and was impressed with their shipping service.</p>
+            </div>
+            <!-- Box 3 -->
+            <div class="s-box">
+                <img src="https://images.pexels.com/photos/4393426/pexels-photo-4393426.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="">
+                <h3>Delivered</h3>
+                <p>I wouldn't hesitate to order from them again based on this excellent delivery service.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+    <!-- Connect -->
+    <section class="connect">
+        <div class="connect-text">
+            <span>Let's Talk</span>
+            <h2>Connect now</h2>
+        </div>
+        <a href="#" class="btn">Contact Us</a>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact-box">
+            <h3 class="contact-text">Snacks Time</h3>
+            <span>Connect With Us</span>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </div>
+        <div class="contact-box">
+            <h3 class="contact-text">Menu Links</h3>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+        <div class="contact-box">
+            <h3 class="contact-text">Quick Links</h3>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Privacy Policy">Privacy Policy</a></li>
+            <li><a href="#Disclaimer">Disclaimer</a></li>
+            <li><a href="#Terms Of Use">Terms Of Use</a></li>
+        </div>
+        <div class="contact-box address">
+            <h3 class="contact-text">Contact</h3>
+            <i class='bx bxs-map' ><span>10/24,5 th Main Road,Velachery,Chennai.</span></i>
+            <i class='bx bxs-phone' ><span>+91 89456 32174</span></i>
+            <i class='bx bxs-envelope' ><span>snackstime@gmail.com</span></i>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>© Snacks Time All Right Reserved.</p>
+    </div>
+   </section> 
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link To JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
